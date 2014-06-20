@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+	<title>Wolf Systems</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<meta name="apple-mobile-web-app-status-bar-style" content="white" />
+
+	<link href="../css/jquery.mobile.icons.min.css" rel="stylesheet" type="text/css"  />
+
+	<link href="../css/jquery.mobile-1.4.2.min.css" rel="stylesheet" type="text/css" title="app-theme" />
+
+	<link href="../css/style.css" rel="stylesheet" type="text/css"  />
+
+	<link href="../css/dark.css" rel="stylesheet" type="text/css"  />
+
+</head>
+
+<body>
+
+<div data-role="page" id="options">
+
+	<div data-role="header" class="header">
+
+		<h1>Wolf Systems</h1>
+
+	</div><!-- /header -->
+
+	<div role="main" class="ui-content">
+		
+		<div class="row options">
+
+			<label for="pitch">Pitch Increment:</label>
+
+			<input type="range" name="pitch" id="pitch" value="0.5" min="0.5" max="2.5" step="0.5" data-highlight="true">
+
+		</div>
+
+		<div class="row options">
+		
+			<label for="distance">Supplier Range:</label>
+
+			<input type="range" name="distance" id="distance" value="50" min="0" max="500" step="50" data-highlight="true">
+
+		</div>
+
+		<div class="row options">
+
+			<label for="language" class="select">Language:</label>
+
+			<select name="language" id="language" class="dark-select">
+
+			    <option value="english-uk">English (UK)</option>
+
+			</select>
+
+		</div>
+
+		<!-- <div class="row options">
+
+			<label for="theme" class="select">Select Theme:</label>
+
+			<select name="theme" id="theme">
+
+			    <option value="light" class="dark-select" id="light-theme">Light</option>
+
+			    <option value="dark" class="dark-select"  id="dark-theme">Dark</option>
+
+			</select>
+
+		</div> -->
+
+	</div><!-- /content -->
+
+	<div class='footer-wrapper'>
+
+		<div data-role="footer" style="overflow:hidden;">
+	
+		    <div data-role="navbar" data-iconpos="top">
+	
+	            <ul>
+	
+	                <li><a href="angle.html" data-icon="grid" data-transition="slide">Angle</a></li>
+	
+	                <li><a href="truss.html" data-icon="star" data-transition="slide">Truss</a></li>
+	
+	                <li><a href="suppliers.html" data-icon="shop" data-transition="slide">Suppliers</a></li>
+	
+	                <li><a href="options.html" data-icon="gear" class="ui-btn-active">Options</a></li>
+	
+	            </ul>
+	
+	        </div><!-- /navbar -->
+	
+		</div><!-- /footer -->	
+	
+	</div><!-- /footer-wrapper -->
+
+
+</div><!-- /page -->
+
+<script type="text/javascript" charset="utf-8" src="../js/jquery-2.1.1.js"></script>
+
+<script type="text/javascript" charset="utf-8" src="../js/jquery.mobile-1.4.2.min.js"></script>
+
+<script type="text/javascript" charset="utf-8" src="../js/index.js"></script>
+
+<script type="text/javascript">
+
+	// $(document).ready(function () {
+	// 	alert(window.localStorage.getItem('theme') );
+	// 	//Check to see if a colour theme has been set
+	// 	if(window.localStorage.getItem('theme')!= "undefined" && window.localStorage.getItem('theme') !== null) {
+		
+	// 		//Append the dark colour theme if it has been set
+	// 		if(window.localStorage.getItem('theme') === "dark") {
+        
+ //        		 $('head').append('<link href="../css/dark.css" rel="stylesheet" id="dark-stylesheet" />');
+        
+ //        		 $('#theme').val('dark');
+        
+ //        		} else {
+        
+ //            		$('#dark-stylesheet').remove();                         
+		
+	// 				$('#theme').val('light');
+        
+ //            }
+		
+	// 	} 
+
+ //        $('#theme').change( function() {
+
+ //            if($(this).val() === "dark") {
+
+ //        		 $('head').append('<link href="../css/dark.css" rel="stylesheet" id="dark-stylesheet" />');
+
+ //        		 window.localStorage.setItem('theme', 'dark'); 
+
+ //            } else {
+
+ //            	$('#dark-stylesheet').remove();                         
+
+ //        		 window.localStorage.setItem('theme', 'light');  
+
+ //            }
+
+ //        });
+
+ //    });
+
+</script>
+
+</body>
+
+</html>

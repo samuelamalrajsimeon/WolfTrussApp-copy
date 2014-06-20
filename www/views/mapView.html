@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+  <title>Wolf Systems</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href="../css/jquery.mobile.icons.min.css" rel="stylesheet" type="text/css"  />
+  
+  <link href="../css/jquery.mobile-1.4.2.min.css" rel="stylesheet" type="text/css" />
+  
+  <link href="../css/style.css" rel="stylesheet" type="text/css"  />
+
+  <link href="../css/dark.css" rel="stylesheet" type="text/css"  />
+
+</head>
+
+<body>
+
+<div data-role="page" id="map">
+
+  <div data-role="header" class="header">
+
+    <h1>Wolf Systems</h1>
+
+    <div data-role="navbar" data-iconpos="left" class="map-top-nav">
+
+        <ul>
+        
+            <li><a href="multiView1.html#suppliers" data-icon="bullets" data-ajax="false">List</a></li>
+        
+            <li><a href="mapView.html" class="top-nav-active" data-icon="location">Map</a></li>
+        
+        </ul>
+
+    </div>
+
+  </div>
+
+  <div role="main" class="ui-content map-content">
+
+  <!-- Google maps -->
+  
+  <div id="map-container"></div>
+
+  </div><!-- /content -->
+
+  <div class='footer-wrapper'>
+
+    <div data-role="footer" style="overflow:hidden;">
+
+        <div data-role="navbar" data-iconpos="top">
+
+              <ul>
+
+                  <li><a href="multiView1.html#angle" data-icon="grid" data-ajax="false" data-transition="none">Angle</a></li>
+
+                  <li><a href="multiView1.html#truss" data-icon="star" data-ajax="false" data-transition="none">Truss</a></li>
+
+                  <li><a href="multiView1.html#suppliers" data-icon="shop" data-ajax="false" class="ui-btn-active" data-transition="none">Suppliers</a></li>
+
+                  <li><a href="multiView1.html#options" data-icon="gear" data-ajax="false" data-transition="none">Options</a></li>
+
+              </ul>
+
+          </div><!-- /navbar -->
+
+    </div><!-- /footer -->  
+
+  </div><!-- /footer-wrapper -->
+
+</div><!-- /page --> 
+
+<script type="text/javascript" charset="utf-8" src="../js/jquery-2.1.1.js"></script>
+
+<script type="text/javascript" charset="utf-8" src="../js/jquery-2.1.1.js"></script>
+
+<script type="text/javascript" charset="utf-8" src="../js/jquery.mobile-1.4.2.min.js"></script>
+
+<script type="text/javascript" charset="utf-8" src="../js/index.js"></script>
+
+<script type="text/javascript" charset="utf-8"  src="http://maps.googleapis.com/maps/api/js?sensor=true"></script>
+
+<script type="text/javascript">
+                
+    $(document).ready(function(){
+      
+      createMap();
+      
+    });         
+    
+    var map_container, map;
+    
+    var map_options = {
+        
+        zoom: 15,
+        
+            center: new google.maps.LatLng(-34.397, 150.644),
+            
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+          
+        }     
+    
+     function createMap() {
+      
+      map_container = document.getElementById('map-container');
+        
+        map = new google.maps.Map(map_container, map_options);
+        
+    }
+
+    //Check to see if a colour theme has been set
+    if(window.localStorage.getItem('theme')!= "undefined" && window.localStorage.getItem('theme') !== null) {
+    
+      //Append the dark colour theme if it has been set
+      if(window.localStorage.getItem('theme') === "dark") {
+        
+             $('head').append('<link href="../css/dark.css" rel="stylesheet" id="dark-stylesheet" />');
+        
+             $('#theme').val('dark');
+        
+            } else {
+        
+                $('#dark-stylesheet').remove();                         
+    
+          $('#theme').val('light');
+        
+            }
+    
+    } 
+       
+</script>
+
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Untitled Document</title>
+
+<link href=".../css/jquery.mobile-1.4.2.min.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body onload="init()">
+<script src="architect://architect.js"></script>
+<script src="theWorld.js"></script>
+<h1> </h1>
+
+<div id="angleDisp" style="color:#FFF; font-size: 36px;"></div>
+<div>
+<canvas id="canvas" style="width:100%; height:95%"></canvas>
+<script>
+
+var canvasDraw = document.getElementById("canvas");
+var startPoint = canvasDraw.width/2;
+var vertStart = canvasDraw.height/2;
+var canvas_Context = canvasDraw.getContext("2d");
+
+canvas_Context.moveTo(startPoint,10);
+canvas_Context.lineTo(startPoint,190);
+canvas_Context.moveTo(0,vertStart);
+canvas_Context.lineTo(canvasDraw.width,vertStart);
+canvas_Context.strokeStyle ="red";
+
+canvas_Context.stroke();
+</script>
+</div>
+<div class="buttonBar"><h1>
+<a href="#" onclick="buttonClick();"> Use this angle</a>
+</h1>
+
+<h1>
+<a href="#" style="margin-left:50%" onclick="closeCamera();"> Close camera</a>
+</h1>
+</body>
+</html>

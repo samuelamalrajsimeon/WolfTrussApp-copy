@@ -1,0 +1,103 @@
+.logo-wrapper {
+    width: 100%;
+}
+
+.logo-wrapper a {
+    display: block;
+}
+
+.logo {
+    margin-left: 50%;
+    margin-right: 50%;
+}
+
+.footer-wrapper {
+
+position: absolute;
+bottom: 0px;
+width: 100%;
+}
+
+/* List items */
+.ui-li-static.ui-collapsible {
+    padding: 0;
+}
+.ui-li-static.ui-collapsible > .ui-collapsible-content > .ui-listview,
+.ui-li-static.ui-collapsible > .ui-collapsible-heading {
+    margin: 0;
+}
+.ui-li-static.ui-collapsible > .ui-collapsible-content {
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-right: 0;
+    border-bottom-width: 0;
+}
+/* collapse vertical borders */
+.ui-li-static.ui-collapsible > .ui-collapsible-content > .ui-listview > li.ui-last-child,
+.ui-li-static.ui-collapsible.ui-collapsible-collapsed > .ui-collapsible-heading > a.ui-btn {
+    border-bottom-width: 0;
+}
+.ui-li-static.ui-collapsible > .ui-collapsible-content > .ui-listview > li.ui-first-child,
+.ui-li-static.ui-collapsible > .ui-collapsible-content > .ui-listview > li.ui-first-child > a.ui-btn,
+.ui-li-static.ui-collapsible > .ui-collapsible-heading > a.ui-btn {
+    border-top-width: 0;
+}
+/* Remove right borders */
+.ui-li-static.ui-collapsible > .ui-collapsible-heading > a.ui-btn,
+.ui-li-static.ui-collapsible > .ui-collapsible-content > .ui-listview > .ui-li-static,
+.ui-li-static.ui-collapsible > .ui-collapsible-content > .ui-listview > li > a.ui-btn,
+.ui-li-static.ui-collapsible > .ui-collapsible-content {
+    border-right-width: 0;
+}
+/* Remove left borders */
+/* Here, we need class ui-listview-outer to identify the outermost listview */
+.ui-listview-outer > .ui-li-static.ui-collapsible .ui-li-static.ui-collapsible.ui-collapsible,
+.ui-listview-outer > .ui-li-static.ui-collapsible > .ui-collapsible-heading > a.ui-btn,
+.ui-li-static.ui-collapsible > .ui-collapsible-content {
+    border-left-width: 0;
+}
+
+h2.ui-collapsible-heading {
+	width: 90%;
+}
+
+/*
+=======================
+Options view
+=======================
+*/
+.options {
+    margin-bottom: 2em;
+}
+
+/*
+=======================
+Map view
+=======================
+*/
+
+.map-content {
+    padding: 0;
+    position : absolute !important;
+    top : 40px !important; 
+    right : 0;
+    bottom : 40px !important; 
+    left : 0 !important;
+}
+
+#map-container {  
+    height: 100%;
+}
+
+/*Force the navbar of the google map */
+.map-top-nav {
+    z-index: 2;
+    position: relative;
+    top: -0.5em;
+    left: -0.1em;
+}
+
+.top-nav-active {
+    border: 1px solid #000;
+    color: #ebf057 !important;
+}

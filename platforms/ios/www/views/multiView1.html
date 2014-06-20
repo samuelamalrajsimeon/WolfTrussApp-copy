@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+	<title>Wolf Systems</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<meta name="apple-mobile-web-app-status-bar-style" content="white" />
+
+	<link href="../css/jquery.mobile.icons.min.css" rel="stylesheet" type="text/css"  />
+
+	<link href="../css/jquery.mobile-1.4.2.min.css" rel="stylesheet" type="text/css" title="app-theme" />
+
+	<link href="../css/style.css" rel="stylesheet" type="text/css"  />
+
+</head>
+
+<body>
+
+<!--
+=============================
+TRUSS PAGE
+=============================
+-->
+<div data-role="page" id="truss">
+
+	<div data-role="header" class="header">
+
+		<h1>Wolf Systems</h1>
+
+	</div><!-- /header -->
+
+	<div role="main" class="ui-content">
+		
+		<div class="row">
+
+			<label for="rafter">Rafter size:</label>
+
+			<input type="number" name="rafter" id="rafter" patter="[0-9]*">
+
+		</div>
+
+		<div class="row">
+
+			<label for="pitch">Pitch:</label>
+
+			<input type="number" name="pitch" id="pitch" patter="[0-9]*">
+
+		</div>
+
+		<div class="row">
+
+			<label for="span">Span:</label>
+
+			<input type="number" name="span" id="span" patter="[0-9]*">
+
+		</div>
+
+		<div class="row">
+
+			<label for="uside">U/side:</label>
+
+			<input type="number" name="uside" id="uside" patter="[0-9]*">
+
+		</div>
+
+		<div class="row">
+
+			<label for="span">Overall:</label>
+
+			<input type="number" name="overall" id="overall" patter="[0-9]*">
+
+		</div>
+
+	</div><!-- /content -->
+
+	<div class='footer-wrapper'>
+
+		<div data-role="footer" style="overflow:hidden;">
+	
+		    <div data-role="navbar" data-iconpos="top">
+	
+	            <ul>
+	
+	                <li><a href="#angle" data-icon="grid" data-transition="none" >Angle</a></li>
+	
+	                <li><a href="#truss" data-icon="star" class="ui-btn-active" data-transition="none">Truss</a></li>
+	
+	                <li><a href="#suppliers" data-icon="shop" data-transition="slide">Suppliers</a></li>
+	
+	                <li><a href="options.html" data-icon="gear" data-transition="slide">Options</a></li>
+	
+	            </ul>
+	
+	        </div><!-- /navbar -->
+	
+		</div><!-- /footer -->	
+	
+	</div><!-- /footer-wrapper -->
+
+</div><!-- /page -->
+
+<!--
+=============================
+OPTIONS PAGE
+=============================
+-->
+<div data-role="page" id="options">
+
+	<div data-role="header">
+
+		<h1>Wolf Systems</h1>
+
+	</div><!-- /header -->
+
+	<div role="main" class="ui-content">
+		
+		<div class="row options">
+
+			<label for="pitch">Pitch Increment:</label>
+
+			<input type="range" name="pitch" id="pitch" value="0.5" min="0.5" max="2.5" step="0.5" data-highlight="true">
+
+		</div>
+
+		<div class="row options">
+		
+			<label for="distance">Supplier Range:</label>
+
+			<input type="range" name="distance" id="distance" value="50" min="0" max="500" step="50" data-highlight="true">
+
+		</div>
+
+		<div class="row options">
+
+			<label for="language" class="select">Language:</label>
+
+			<select name="language" id="language" class="dark-select">
+
+			    <option value="english-uk">English (UK)</option>
+
+			</select>
+
+		</div>
+
+		<div class="row options">
+
+		<label for="theme" class="select">Select Theme:</label>
+
+		<select name="theme" id="theme">
+
+		    <option value="light" class="dark-select" id="light-theme">Light</option>
+
+		    <option value="dark" class="dark-select"  id="dark-theme">Dark</option>
+
+		</select>
+
+	</div>
+
+	</div><!-- /content -->
+
+	<div class='footer-wrapper'>
+
+		<div data-role="footer" style="overflow:hidden;">
+	
+		    <div data-role="navbar" data-iconpos="top">
+	
+	            <ul>
+	
+	                <li><a href="#angle" data-icon="grid" data-transition="slide">Angle</a></li>
+	
+	                <li><a href="#truss" data-icon="star" data-transition="slide">Truss</a></li>
+	
+	                <li><a href="#suppliers" data-icon="shop" data-transition="slide">Suppliers</a></li>
+	
+	                <li><a href="#options" data-icon="gear" class="ui-btn-active" data-transition="slide">Options</a></li>
+	
+	            </ul>
+	
+	        </div><!-- /navbar -->
+	
+		</div><!-- /footer -->	
+	
+	</div><!-- /footer-wrapper -->
+
+
+</div><!-- /page -->
+
+<!--
+=============================
+SUPPLIERS PAGE
+=============================
+-->
+
+<div data-role="page" id="suppliers">
+
+	<div data-role="header">
+
+		<h1>Wolf Systems</h1>
+
+		<div data-role="navbar" data-iconpos="left">
+
+		    <ul>
+		    
+		        <li><a href="#suppliers" class="ui-btn-active" data-icon="bullets" data-transition="slide">List</a></li>
+		    
+		        <li><a href="mapView.html" data-icon="location" data-ajax="false" data-transition="slide">Map</a></li>
+		    
+		    </ul>
+
+		</div><!-- /navbar -->
+
+	</div><!-- /header -->
+
+	<div role="main" class="ui-content">
+
+		<ul data-role="listview" class="ui-listview-outer">
+			
+				<li data-role="collapsible" data-iconpos="right" data-shadow="false" data-corners="false" class="dark-list">
+	
+				    <h2>Truss Company</h2>
+	
+				    <ul data-role="listview" data-shadow="false" data-inset="true" data-corners="false">
+	
+				      <li>John Smith</li>
+	
+				      <li>01202 567456</li>
+	
+				      <li>www.truss.com</li>
+	
+				    </ul>
+	
+				</li>
+				
+				<li data-role="collapsible" data-iconpos="right" data-shadow="false" data-corners="false">
+	
+				    <h2>Truss Company</h2>
+	
+				    <ul data-role="listview" data-shadow="false" data-inset="true" data-corners="false">
+	
+				      <li>John Smith</li>
+	
+				      <li>01202 567456</li>
+	
+				      <li>www.truss.com</li>
+	
+				    </ul>
+	
+				</li>
+
+				<li data-role="collapsible" data-iconpos="right" data-shadow="false" data-corners="false">
+	
+				    <h2>Truss Company</h2>
+	
+				    <ul data-role="listview" data-shadow="false" data-inset="true" data-corners="false">
+	
+				      <li>John Smith</li>
+	
+				      <li>01202 567456</li>
+	
+				      <li>www.truss.com</li>
+	
+				    </ul>
+	
+				</li>
+
+				<li data-role="collapsible" data-iconpos="right" data-shadow="false" data-corners="false">
+	
+				    <h2>Truss Company</h2>
+	
+				    <ul data-role="listview" data-shadow="false" data-inset="true" data-corners="false">
+	
+				      <li>John Smith</li>
+	
+				      <li>01202 567456</li>
+	
+				      <li>www.truss.com</li>
+	
+				    </ul>
+	
+				</li>
+
+				<li data-role="collapsible" data-iconpos="right" data-shadow="false" data-corners="false">
+	
+				    <h2>Truss Company</h2>
+	
+				    <ul data-role="listview" data-shadow="false" data-inset="true" data-corners="false">
+	
+				      <li>John Smith</li>
+	
+				      <li>01202 567456</li>
+	
+				      <li>www.truss.com</li>
+	
+				    </ul>
+	
+				</li>
+						
+			</ol>
+	
+	</div><!-- /content -->
+
+	<div class='footer-wrapper'>
+
+		<div data-role="footer" style="overflow:hidden;">
+	
+		    <div data-role="navbar" data-iconpos="top">
+	
+	            <ul>
+
+	                <li><a href="#angle" data-icon="grid" data-transition="slide">Angle</a></li>
+
+	                <li><a href="#truss" data-icon="star" data-transition="slide">Truss</a></li>
+
+	                <li><a href="#suppliers" data-icon="shop" class="ui-btn-active" data-transition="slide">Suppliers</a></li>
+
+	                <li><a href="#options" data-icon="gear" data-transition="slide">Options</a></li>
+	            </ul>
+
+	        </div><!-- /navbar -->
+
+		</div><!-- /footer -->	
+
+	</div><!-- /footer-wrapper -->
+
+</div><!-- /page -->
+
+<script type="text/javascript" charset="utf-8" src="../js/jquery-2.1.1.js"></script>
+
+<script type="text/javascript" charset="utf-8" src="../js/jquery.mobile-1.4.2.min.js"></script>
+
+<script type="text/javascript" charset="utf-8" src="../js/index.js"></script>
+
+<script type="text/javascript">
+
+	$(document).ready(function () {
+
+		//Check to see if a colour theme has been set
+		if(window.localStorage.getItem('theme')!= "undefined" && window.localStorage.getItem('theme') !== null) {
+		
+			//Append the dark colour theme if it has been set
+			if(window.localStorage.getItem('theme') === "dark") {
+        
+        		 $('head').append('<link href="../css/dark.css" rel="stylesheet" id="dark-stylesheet" />');
+        
+        		 $('#theme').val('dark');
+        
+        		} else {
+        
+            		$('#dark-stylesheet').remove();                         
+		
+					$('#theme').val('light');
+        
+            }
+		
+		} 
+
+        $('#theme').change( function() {
+
+            if($(this).val() === "dark") {
+
+        		 $('head').append('<link href="../css/dark.css" rel="stylesheet" id="dark-stylesheet" />');
+
+        		 window.localStorage.setItem('theme', 'dark'); 
+
+            } else {
+
+            	$('#dark-stylesheet').remove();                         
+
+        		 window.localStorage.setItem('theme', 'light');  
+
+            }
+
+        });
+
+    });
+
+</script>
+
+</body>
+
+</html>

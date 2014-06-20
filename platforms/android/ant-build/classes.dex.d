@@ -1,0 +1,27 @@
+/Users/systemadmin/WolfTrussApp/platforms/android/ant-build/classes.dex : \
+/Users/systemadmin/WolfTrussApp/platforms/android/ant-build/classes/com/wikitude/phonegap/WikitudePlugin$1.class \
+/Users/systemadmin/WolfTrussApp/platforms/android/ant-build/classes/com/wikitude/phonegap/WikitudePlugin$10.class \
+/Users/systemadmin/WolfTrussApp/platforms/android/ant-build/classes/com/wikitude/phonegap/WikitudePlugin$11.class \
+/Users/systemadmin/WolfTrussApp/platforms/android/ant-build/classes/com/wikitude/phonegap/WikitudePlugin$2$1.class \
+/Users/systemadmin/WolfTrussApp/platforms/android/ant-build/classes/com/wikitude/phonegap/WikitudePlugin$2.class \
+/Users/systemadmin/WolfTrussApp/platforms/android/ant-build/classes/com/wikitude/phonegap/WikitudePlugin$3.class \
+/Users/systemadmin/WolfTrussApp/platforms/android/ant-build/classes/com/wikitude/phonegap/WikitudePlugin$4.class \
+/Users/systemadmin/WolfTrussApp/platforms/android/ant-build/classes/com/wikitude/phonegap/WikitudePlugin$5.class \
+/Users/systemadmin/WolfTrussApp/platforms/android/ant-build/classes/com/wikitude/phonegap/WikitudePlugin$6.class \
+/Users/systemadmin/WolfTrussApp/platforms/android/ant-build/classes/com/wikitude/phonegap/WikitudePlugin$7.class \
+/Users/systemadmin/WolfTrussApp/platforms/android/ant-build/classes/com/wikitude/phonegap/WikitudePlugin$8.class \
+/Users/systemadmin/WolfTrussApp/platforms/android/ant-build/classes/com/wikitude/phonegap/WikitudePlugin$9.class \
+/Users/systemadmin/WolfTrussApp/platforms/android/ant-build/classes/com/wikitude/phonegap/WikitudePlugin$ArchitectViewPhoneGap$OnKeyUpDownListener.class \
+/Users/systemadmin/WolfTrussApp/platforms/android/ant-build/classes/com/wikitude/phonegap/WikitudePlugin$ArchitectViewPhoneGap.class \
+/Users/systemadmin/WolfTrussApp/platforms/android/ant-build/classes/com/wikitude/phonegap/WikitudePlugin$ILocationProvider.class \
+/Users/systemadmin/WolfTrussApp/platforms/android/ant-build/classes/com/wikitude/phonegap/WikitudePlugin$LocationProvider.class \
+/Users/systemadmin/WolfTrussApp/platforms/android/ant-build/classes/com/wikitude/phonegap/WikitudePlugin.class \
+/Users/systemadmin/WolfTrussApp/platforms/android/ant-build/classes/com/WolfSystems/TrussCalculator/BuildConfig.class \
+/Users/systemadmin/WolfTrussApp/platforms/android/ant-build/classes/com/WolfSystems/TrussCalculator/R$attr.class \
+/Users/systemadmin/WolfTrussApp/platforms/android/ant-build/classes/com/WolfSystems/TrussCalculator/R$drawable.class \
+/Users/systemadmin/WolfTrussApp/platforms/android/ant-build/classes/com/WolfSystems/TrussCalculator/R$string.class \
+/Users/systemadmin/WolfTrussApp/platforms/android/ant-build/classes/com/WolfSystems/TrussCalculator/R$xml.class \
+/Users/systemadmin/WolfTrussApp/platforms/android/ant-build/classes/com/WolfSystems/TrussCalculator/R.class \
+/Users/systemadmin/WolfTrussApp/platforms/android/ant-build/classes/com/WolfSystems/TrussCalculator/WolfSystemsTrussCalculator.class \
+/Users/systemadmin/WolfTrussApp/platforms/android/ant-build/dexedLibs/classes-ed4bba88e4f6214694b9a2d16260e22f.jar \
+/Users/systemadmin/WolfTrussApp/platforms/android/ant-build/dexedLibs/wikitudesdk-a99805215700f3ccdc1aa7235fc83d92.jar \
